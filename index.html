@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snow Peak IT | Managed IT Services</title>
+  <meta name="description" content="Snow Peak IT provides proactive managed IT support, helpdesk, monitoring, and maintenance for small and mid-size businesses.">
+  <style>
+    :root {
+      --navy: #16324F;
+    --ice: #4FA8D8;
+    --slate: #5A6B7A;
+    --bg-light: #F5F8FA;
+          --white: #FFFFFF;
+      }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+        font-family: Arial, Helvetica, sans-serif;
+    color: var(--navy);
+    line-height: 1.6;
+    background: var(--white);
+}
+  a { text-decoration: none; color: inherit; }
+  .container {
+        max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+  header {
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    border-bottom: 1px solid #E3EAF0;
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 10;
+}
+  .brand {
+        display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  .brand svg { width: 34px; height: 22px; }
+  .brand span {
+        font-size: 20px;
+    font-weight: bold;
+}
+  .brand span .it { color: var(--ice); }
+  nav ul {
+        list-style: none;
+    display: flex;
+    gap: 28px;
+  }
+  nav a {
+        font-size: 15px;
+    font-weight: bold;
+    color: var(--navy);
+}
+  nav a:hover { color: var(--ice); }
+  .nav-toggle { display: none; }
+  .header-cta {
+        background: var(--navy);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+  .header-cta:hover { background: var(--ice); }
+  .hero {
+        background: var(--bg-light);
+    padding: 80px 24px;
+    text-align: center;
+  }
+  .hero h1 {
+        font-size: 42px;
+    max-width: 720px;
+    margin: 0 auto 18px;
+}
+  .hero p {
+        font-size: 18px;
+    color: var(--slate);
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+  .btn-row {
+        display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  .btn {
+        padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+}
+  .btn-primary { background: var(--navy); color: var(--white); }
+  .btn-primary:hover { background: var(--ice); }
+  .btn-secondary { background: var(--white); color: var(--navy); border: 2px solid var(--navy); }
+  .btn-secondary:hover { border-color: var(--ice); color: var(--ice); }
+  section { padding: 80px 24px; }
+  .section-header { text-align: center; max-width: 640px; margin: 0 auto 48px; }
+  .section-header h2 { font-size: 32px; margin-bottom: 14px; }
+  .section-header p { color: var(--slate); font-size: 16px; }
+  .cards {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+    }
+  .card {
+        background: var(--bg-light);
+    padding: 32px 24px;
+    border-radius: 8px;
+    border-top: 3px solid var(--ice);
+  }
+  .card h3 { font-size: 18px; margin-bottom: 10px; }
+  .card p { color: var(--slate); font-size: 15px; }
+  .about { background: var(--bg-light); }
+  .about-grid {
+        display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+  .about-grid p { color: var(--slate); margin-bottom: 16px; }
+  .value-list { list-style: none; }
+  .value-list li {
+        padding: 16px 0;
+    border-bottom: 1px solid #E3EAF0;
+    font-weight: bold;
+}
+  .value-list li span {
+        display: block;
+    font-weight: normal;
+    color: var(--slate);
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .cta-banner {
+        background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 64px 24px;
+}
+  .cta-banner h2 { font-size: 28px; margin-bottom: 20px; }
+  .cta-banner .btn-primary { background: var(--ice); color: var(--navy); }
+  .cta-banner .btn-primary:hover { background: var(--white); }
+  .contact-grid {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+  .contact-info p { margin-bottom: 12px; color: var(--slate); }
+  .contact-info strong { color: var(--navy); }
+  .placeholder-note {
+        margin-top: 20px;
+    padding: 14px 16px;
+    background: #FFF7E6;
+        border: 1px solid #F0D89B;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #7A5B12;
+}
+  form { display: flex; flex-direction: column; gap: 14px; }
+  input, textarea {
+        padding: 12px 14px;
+    border: 1px solid #D6DEE5;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+  textarea { min-height: 110px; resize: vertical; }
+  form button {
+        background: var(--navy);
+    color: var(--white);
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  form button:hover { background: var(--ice); }
+  footer {
+        background: var(--navy);
+    color: var(--white);
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 14px;
+}
+  footer .brand span { color: var(--white); }
+  footer .brand span .it { color: var(--ice); }
+  footer .footer-top {
+        display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+  footer p { color: #B9C6D2; }
+    @media (max-width: 800px) {
+    nav { display: none; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 32px; }
+}
+</style>
+  </head>
+  <body>
+  <header>
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,90 L45,10 L90,90" fill="none" stroke="#4FA8D8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M30,90 L85,0 L140,90" fill="none" stroke="#16324F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="110" cy="40" r="4.5" fill="#4FA8D8"/>
+        <path d="M110,40 L140,40 L140,20" fill="none" stroke="#4FA8D8" stroke-width="3" stroke-linecap="round"/>
+        <rect x="135" y="12" width="9" height="9" rx="1" fill="#4FA8D8"/>
+      </svg>
+      <span>SNOW PEAK <span class="it">IT</span></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="header-cta">Get a Quote</a>
+  </header>
+  <div id="top"></div>
+  <section class="hero">
+    <h1>Reliable IT support, without the headaches</h1>
+  <p>Snow Peak IT keeps your business running with proactive managed IT support &mdash; so you can focus on growing, not troubleshooting.</p>
+    <div class="btn-row">
+      <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+      <a href="#services" class="btn btn-secondary">See Our Services</a>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Managed IT support, done right</h2>
+        <p>One flat-rate plan covers the day-to-day IT work so your team never has to think about it.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Helpdesk &amp; support</h3>
+          <p>Fast, friendly remote and on-site support whenever your team runs into an IT issue.</p>
+      </div>
+      <div class="card">
+        <h3>Proactive monitoring</h3>
+        <p>We watch your systems around the clock and catch problems before they cause downtime.</p>
+      </div>
+      <div class="card">
+        <h3>Maintenance &amp; updates</h3>
+          <p>Patching, updates, and backups handled on a regular schedule &mdash; no more surprises.</p>
+        </div>
+        <div class="card">
+          <h3>Predictable pricing</h3>
+          <p>One flat monthly rate covers your support, so IT costs stay easy to budget for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div>
+        <h2 style="font-size:32px; margin-bottom:18px;">About Snow Peak IT</h2>
+      <p>Snow Peak IT is a managed IT services provider built for small and mid-size businesses that want dependable, proactive support without the overhead of an in-house IT department.</p>
+        <p>We handle the day-to-day so you can focus on running your business.</p>
+    </div>
+    <ul class="value-list">
+      <li>Proactive, not reactive
+        <span>We catch and fix issues before they slow you down.</span>
+        </li>
+        <li>Straightforward pricing
+        <span>Flat-rate plans with no surprise invoices.</span>
+        </li>
+        <li>Support that's easy to reach
+          <span>A real person, not a ticket queue that goes nowhere.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="cta-banner">
+    <h2>Ready to stop worrying about IT?</h2>
+  <a href="#contact" class="btn btn-primary">Talk to Us</a>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in touch</h2>
+      <p>Tell us a bit about your business and we'll follow up to schedule a free consultation.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> info@snowpeakit.com</p>
+          <p><strong>Service area:</strong> Utah and surrounding areas</p>
+          <div class="placeholder-note">
+            Placeholder contact info &mdash; update with your real phone number and confirmed domain email before launch.
+          </div>
+        </div>
+        <form>
+          <input type="text" placeholder="Full name" required>
+          <input type="email" placeholder="Email address" required>
+          <input type="text" placeholder="Company name">
+          <textarea placeholder="What can we help with?"></textarea>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-top brand" style="justify-content:center;">
+      <svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:18px;">
+        <path d="M0,90 L45,10 L90,90" fill="none" stroke="#4FA8D8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M30,90 L85,0 L140,90" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="110" cy="40" r="4.5" fill="#4FA8D8"/>
+        <path d="M110,40 L140,40 L140,20" fill="none" stroke="#4FA8D8" stroke-width="3" stroke-linecap="round"/>
+        <rect x="135" y="12" width="9" height="9" rx="1" fill="#4FA8D8"/>
+      </svg>
+      <span style="margin-left:10px;">SNOW PEAK <span class="it">IT</span></span>
+    </div>
+    <p>&copy; 2026 Snow Peak IT. All rights reserved.</p>
+</footer>
+</body>
+  </html>
+  
