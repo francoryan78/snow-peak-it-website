@@ -290,11 +290,11 @@
           <p><strong>Email:</strong> info@snowpeakit.com</p>
           <p><strong>Service area:</strong> Utah and surrounding areas</p>
         </div>
-        <form>
-          <input type="text" placeholder="Full name" required>
-          <input type="email" placeholder="Email address" required>
-          <input type="text" placeholder="Company name">
-          <textarea placeholder="What can we help with?"></textarea>
+        <form action="mailto:info@snowpeakit.com" method="post" enctype="text/plain">
+          <input type="text" name="Name" placeholder="Full name" required>
+          <input type="email" name="Email" placeholder="Email address" required>
+          <input type="text" name="Company" placeholder="Company name">
+          <textarea name="Message" placeholder="What can we help with?"></textarea>
           <button type="submit">Send message</button>
         </form>
       </div>
