@@ -290,14 +290,18 @@
           <p><strong>Email:</strong> info@snowpeakit.com</p>
           <p><strong>Service area:</strong> Utah and surrounding areas</p>
         </div>
-        <form action="mailto:info@snowpeakit.com" method="post" enctype="text/plain">
-          <input type="text" name="Name" placeholder="Full name" required>
-          <input type="email" name="Email" placeholder="Email address" required>
-          <input type="text" name="Company" placeholder="Company name">
-          <textarea name="Message" placeholder="What can we help with?"></textarea>
-          <button type="submit">Send message</button>
-        </form>
-      </div>
+      <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSerN1cAvOeWdlGbBKE5mFgExkbuz_I6Gi1Xxx1EoqC_ghlEnQ/formResponse" method="POST" target="hidden_iframe" onsubmit="document.getElementById('contact-success').style.display='block'; this.style.display='none';">
+              <input type="text" name="entry.234996504" placeholder="Full name" required>
+              <input type="email" name="entry.840589164" placeholder="Email address" required>
+              <input type="text" name="entry.2115161982" placeholder="Company name">
+              <textarea name="entry.28295228" placeholder="What can we help with?"></textarea>
+              <button type="submit">Send message</button>
+      </form>
+            <div id="contact-success" style="display:none; padding:14px 16px; background:#EAF6EF; border:1px solid #BFE3CC; border-radius:6px; color:#1F5C36; font-size:14px;">
+                      Thanks &mdash; your message has been sent. We'll be in touch soon.
+            </div>
+              <iframe name="hidden_iframe" style="display:none;"></iframe>
+            </div>
     </div>
   </section>
   <footer>
