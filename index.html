@@ -1,336 +1,181 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snow Peak IT | Managed IT Services</title>
-  <meta name="description" content="Snow Peak IT provides proactive managed IT support, helpdesk, monitoring, and maintenance for small and mid-size businesses.">
-    <link rel="canonical" href="https://snowpeakit.com/">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Snow Peak IT">
-    <meta property="og:title" content="Snow Peak IT | Managed IT Services">
-    <meta property="og:description" content="Snow Peak IT provides proactive managed IT support, helpdesk, monitoring, and maintenance for small and mid-size businesses.">
-    <meta property="og:url" content="https://snowpeakit.com/">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Snow Peak IT | Managed IT Services">
-    <meta name="twitter:description" content="Snow Peak IT provides proactive managed IT support, helpdesk, monitoring, and maintenance for small and mid-size businesses.">
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"ProfessionalService","name":"Snow Peak IT","description":"Snow Peak IT provides proactive managed IT support, helpdesk, monitoring, and maintenance for small and mid-size businesses.","url":"https://snowpeakit.com/","telephone":"+1-801-717-9250","email":"info@snowpeakit.com","areaServed":{"@type":"State","name":"Utah"},"priceRange":"$$"}
-    </script>
-  <style>
-    :root {
-      --navy: #16324F;
-    --ice: #4FA8D8;
-    --slate: #5A6B7A;
-    --bg-light: #F5F8FA;
-          --white: #FFFFFF;
-      }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-        font-family: Arial, Helvetica, sans-serif;
-    color: var(--navy);
-    line-height: 1.6;
-    background: var(--white);
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snow Peak IT | Managed IT Support &amp; Web Design in Utah</title>
+<meta name="description" content="Snow Peak IT provides proactive managed IT support and professional web design for small and mid-size businesses across Utah. Flat-rate plans, real support, no surprises.">
+<link rel="canonical" href="https://snowpeakit.com/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#16324F">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/css/style.css?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Snow Peak IT">
+<meta property="og:title" content="Snow Peak IT | Managed IT Support &amp; Web Design in Utah">
+<meta property="og:description" content="Proactive managed IT support and professional web design for small and mid-size businesses across Utah.">
+<meta property="og:url" content="https://snowpeakit.com/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Snow Peak IT | Managed IT Support &amp; Web Design in Utah">
+<meta name="twitter:description" content="Proactive managed IT support and professional web design for small and mid-size businesses across Utah.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://snowpeakit.com/#organization",
+  "name": "Snow Peak IT",
+  "description": "Snow Peak IT provides proactive managed IT support and professional web design for small and mid-size businesses across Utah.",
+  "url": "https://snowpeakit.com/",
+  "telephone": "+1-801-717-9250",
+  "email": "info@snowpeakit.com",
+  "areaServed": { "@type": "State", "name": "Utah" },
+  "priceRange": "$$",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Managed IT Support", "url": "https://snowpeakit.com/services.html#it-support" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Design Services", "url": "https://snowpeakit.com/services.html#web-design" } }
+  ]
 }
-  a { text-decoration: none; color: inherit; }
-  .container {
-        max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-  header {
-        display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 24px;
-    border-bottom: 1px solid #E3EAF0;
-    position: sticky;
-    top: 0;
-    background: var(--white);
-    z-index: 10;
-}
-  .brand {
-        display: flex;
-    align-items: center;
-    gap: 10px;
-}
-  .brand svg { width: 34px; height: 22px; }
-  .brand span {
-        font-size: 20px;
-    font-weight: bold;
-}
-  .brand span .it { color: var(--ice); }
-  nav ul {
-        list-style: none;
-    display: flex;
-    gap: 28px;
-  }
-  nav a {
-        font-size: 15px;
-    font-weight: bold;
-    color: var(--navy);
-}
-  nav a:hover { color: var(--ice); }
-  .nav-toggle { display: none; }
-  .header-cta {
-        background: var(--navy);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: bold;
-}
-  .header-cta:hover { background: var(--ice); }
-  .hero {
-        background: var(--bg-light);
-    padding: 80px 24px;
-    text-align: center;
-  }
-  .hero h1 {
-        font-size: 42px;
-    max-width: 720px;
-    margin: 0 auto 18px;
-}
-  .hero p {
-        font-size: 18px;
-    color: var(--slate);
-    max-width: 600px;
-    margin: 0 auto 32px;
-}
-  .btn-row {
-        display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-  .btn {
-        padding: 14px 28px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 15px;
-    display: inline-block;
-}
-  .btn-primary { background: var(--navy); color: var(--white); }
-  .btn-primary:hover { background: var(--ice); }
-  .btn-secondary { background: var(--white); color: var(--navy); border: 2px solid var(--navy); }
-  .btn-secondary:hover { border-color: var(--ice); color: var(--ice); }
-  section { padding: 80px 24px; }
-  .section-header { text-align: center; max-width: 640px; margin: 0 auto 48px; }
-  .section-header h2 { font-size: 32px; margin-bottom: 14px; }
-  .section-header p { color: var(--slate); font-size: 16px; }
-  .cards {
-        display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 28px;
-    }
-  .card {
-        background: var(--bg-light);
-    padding: 32px 24px;
-    border-radius: 8px;
-    border-top: 3px solid var(--ice);
-  }
-  .card h3 { font-size: 18px; margin-bottom: 10px; }
-  .card p { color: var(--slate); font-size: 15px; }
-  .about { background: var(--bg-light); }
-  .about-grid {
-        display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 48px;
-    align-items: center;
-}
-  .about-grid p { color: var(--slate); margin-bottom: 16px; }
-  .value-list { list-style: none; }
-  .value-list li {
-        padding: 16px 0;
-    border-bottom: 1px solid #E3EAF0;
-    font-weight: bold;
-}
-  .value-list li span {
-        display: block;
-    font-weight: normal;
-    color: var(--slate);
-    font-size: 14px;
-    margin-top: 4px;
-  }
-  .cta-banner {
-        background: var(--navy);
-    color: var(--white);
-    text-align: center;
-    padding: 64px 24px;
-}
-  .cta-banner h2 { font-size: 28px; margin-bottom: 20px; }
-  .cta-banner .btn-primary { background: var(--ice); color: var(--navy); }
-  .cta-banner .btn-primary:hover { background: var(--white); }
-  .contact-grid {
-        display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-}
-  .contact-info p { margin-bottom: 12px; color: var(--slate); }
-  .contact-info strong { color: var(--navy); }
-  form { display: flex; flex-direction: column; gap: 14px; }
-  input, textarea {
-        padding: 12px 14px;
-    border: 1px solid #D6DEE5;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 14px;
-}
-  textarea { min-height: 110px; resize: vertical; }
-  form button {
-        background: var(--navy);
-    color: var(--white);
-    border: none;
-    padding: 14px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-  }
-  form button:hover { background: var(--ice); }
-  footer {
-        background: var(--navy);
-    color: var(--white);
-    padding: 32px 24px;
-    text-align: center;
-    font-size: 14px;
-}
-  footer .brand span { color: var(--white); }
-  footer .brand span .it { color: var(--ice); }
-  footer .footer-top {
-        display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-  footer p { color: #B9C6D2; }
-    @media (max-width: 800px) {
-    nav { display: none; }
-    .about-grid, .contact-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 32px; }
-}
-</style>
-  </head>
-  <body>
-  <header>
-    <a href="#top" class="brand">
-      <svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,90 L45,10 L90,90" fill="none" stroke="#4FA8D8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        <path d="M30,90 L85,0 L140,90" fill="none" stroke="#16324F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-        <circle cx="110" cy="40" r="4.5" fill="#4FA8D8"/>
-        <path d="M110,40 L140,40 L140,20" fill="none" stroke="#4FA8D8" stroke-width="3" stroke-linecap="round"/>
-        <rect x="135" y="12" width="9" height="9" rx="1" fill="#4FA8D8"/>
-      </svg>
-      <span>SNOW PEAK <span class="it">IT</span></span>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#contact" class="header-cta">Get a Quote</a>
-  </header>
-  <div id="top"></div>
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <a href="/" class="brand">
+    <svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M0,90 L45,10 L90,90" fill="none" stroke="#4FA8D8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M30,90 L85,0 L140,90" fill="none" stroke="#16324F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="110" cy="40" r="4.5" fill="#4FA8D8"/>
+      <path d="M110,40 L140,40 L140,20" fill="none" stroke="#4FA8D8" stroke-width="3" stroke-linecap="round"/>
+      <rect x="135" y="12" width="9" height="9" rx="1" fill="#4FA8D8"/>
+    </svg>
+    <span>SNOW PEAK <span class="it">IT</span></span>
+  </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="header-actions">
+      <a href="tel:+18017179250" class="header-phone">(801) 717-9250</a>
+      <a href="/contact.html" class="header-cta">Get a Quote</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
   <section class="hero">
-    <h1>Reliable IT support, without the headaches</h1>
-  <p>Snow Peak IT keeps your business running with proactive managed IT support &mdash; so you can focus on growing, not troubleshooting.</p>
+    <span class="eyebrow">Utah Managed IT &amp; Web Design</span>
+    <h1>Reliable IT support and professional web design for growing Utah businesses</h1>
+    <p>Snow Peak IT keeps your systems running and your website working hard for you &mdash; proactive support and thoughtful design, without the headaches.</p>
     <div class="btn-row">
-      <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
-      <a href="#services" class="btn btn-secondary">See Our Services</a>
+      <a href="/contact.html" class="btn btn-primary">Get a Free Consultation</a>
+      <a href="/services.html" class="btn btn-secondary">See Our Services</a>
     </div>
   </section>
-  <section id="services">
+
+  <section id="services-overview">
     <div class="container">
       <div class="section-header">
-        <h2>Managed IT support, done right</h2>
-        <p>One flat-rate plan covers the day-to-day IT work so your team never has to think about it.</p>
+        <h2>Two ways we help your business run smoother</h2>
+        <p>Whether you need dependable day-to-day IT support or a website that actually brings in customers, we've got you covered.</p>
+      </div>
+      <div class="service-lines">
+        <article class="service-line">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#16324F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M20 19v1a3 3 0 0 1-3 3h-4"/></svg>
+          </div>
+          <h3>Managed IT Support</h3>
+          <p>Helpdesk support, proactive monitoring, maintenance, and predictable flat-rate pricing so your team never has to think about IT.</p>
+          <a href="/services.html#it-support" class="learn-more">Explore IT support</a>
+        </article>
+        <article class="service-line">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#16324F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M2.5 8.5h19"/><circle cx="5.5" cy="6.25" r="0.6" fill="#16324F"/><circle cx="7.5" cy="6.25" r="0.6" fill="#16324F"/></svg>
+          </div>
+          <h3>Web Design Services</h3>
+          <p>Custom-built, mobile-friendly websites designed to represent your business well and make it easy for customers to find and reach you.</p>
+          <a href="/services.html#web-design" class="learn-more">Explore web design</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why businesses choose Snow Peak IT</h2>
+        <p>Straightforward service, without the runaround.</p>
       </div>
       <div class="cards">
         <div class="card">
-          <h3>Helpdesk &amp; support</h3>
-          <p>Fast, friendly remote and on-site support whenever your team runs into an IT issue.</p>
-      </div>
-      <div class="card">
-        <h3>Proactive monitoring</h3>
-        <p>We watch your systems around the clock and catch problems before they cause downtime.</p>
-      </div>
-      <div class="card">
-        <h3>Maintenance &amp; updates</h3>
-          <p>Patching, updates, and backups handled on a regular schedule &mdash; no more surprises.</p>
+          <h3>Proactive, not reactive</h3>
+          <p>We catch and fix issues before they slow you down &mdash; on your network and on your website.</p>
         </div>
         <div class="card">
-          <h3>Predictable pricing</h3>
-          <p>One flat monthly rate covers your support, so IT costs stay easy to budget for.</p>
+          <h3>Straightforward pricing</h3>
+          <p>Flat-rate plans and clear project pricing, with no surprise invoices.</p>
+        </div>
+        <div class="card">
+          <h3>Support that's easy to reach</h3>
+          <p>A real person, not a ticket queue that goes nowhere.</p>
         </div>
       </div>
     </div>
   </section>
-  <section id="about" class="about">
-    <div class="container about-grid">
-      <div>
-        <h2 style="font-size:32px; margin-bottom:18px;">About Snow Peak IT</h2>
-      <p>Snow Peak IT is a managed IT services provider built for small and mid-size businesses that want dependable, proactive support without the overhead of an in-house IT department.</p>
-        <p>We handle the day-to-day so you can focus on running your business.</p>
-    </div>
-    <ul class="value-list">
-      <li>Proactive, not reactive
-        <span>We catch and fix issues before they slow you down.</span>
-        </li>
-        <li>Straightforward pricing
-        <span>Flat-rate plans with no surprise invoices.</span>
-        </li>
-        <li>Support that's easy to reach
-          <span>A real person, not a ticket queue that goes nowhere.</span>
-        </li>
-      </ul>
-    </div>
-  </section>
+
   <section class="cta-banner">
-    <h2>Ready to stop worrying about IT?</h2>
-  <a href="#contact" class="btn btn-primary">Talk to Us</a>
+    <h2>Ready to stop worrying about IT and your website?</h2>
+    <a href="/contact.html" class="btn btn-primary">Talk to Us</a>
   </section>
-  <section id="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2>Get in touch</h2>
-      <p>Tell us a bit about your business and we'll follow up to schedule a free consultation.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="brand">
+          <svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M0,90 L45,10 L90,90" fill="none" stroke="#4FA8D8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M30,90 L85,0 L140,90" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="110" cy="40" r="4.5" fill="#4FA8D8"/>
+            <path d="M110,40 L140,40 L140,20" fill="none" stroke="#4FA8D8" stroke-width="3" stroke-linecap="round"/>
+            <rect x="135" y="12" width="9" height="9" rx="1" fill="#4FA8D8"/>
+          </svg>
+          <span>SNOW PEAK <span class="it">IT</span></span>
+        </a>
+        <p>Managed IT support and professional web design for small and mid-size businesses across Utah.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p><strong>Phone:</strong> (801) 717-9250</p>
-          <p><strong>Email:</strong> info@snowpeakit.com</p>
-          <p><strong>Service area:</strong> Utah and surrounding areas</p>
-        </div>
-      <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSerN1cAvOeWdlGbBKE5mFgExkbuz_I6Gi1Xxx1EoqC_ghlEnQ/formResponse" method="POST" target="hidden_iframe" onsubmit="document.getElementById('contact-success').style.display='block'; this.style.display='none';">
-              <input type="text" name="entry.234996504" placeholder="Full name" required>
-              <input type="email" name="entry.840589164" placeholder="Email address" required>
-              <input type="text" name="entry.2115161982" placeholder="Company name">
-              <textarea name="entry.28295228" placeholder="What can we help with?"></textarea>
-              <button type="submit">Send message</button>
-      </form>
-            <div id="contact-success" style="display:none; padding:14px 16px; background:#EAF6EF; border:1px solid #BFE3CC; border-radius:6px; color:#1F5C36; font-size:14px;">
-                      Thanks &mdash; your message has been sent. We'll be in touch soon.
-            </div>
-              <iframe name="hidden_iframe" style="display:none;"></iframe>
-            </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18017179250">(801) 717-9250</a></li>
+          <li><a href="mailto:info@snowpeakit.com">info@snowpeakit.com</a></li>
+          <li>Utah and surrounding areas</li>
+        </ul>
+      </div>
     </div>
-  </section>
-  <footer>
-    <div class="footer-top brand" style="justify-content:center;">
-      <svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:18px;">
-        <path d="M0,90 L45,10 L90,90" fill="none" stroke="#4FA8D8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-        <path d="M30,90 L85,0 L140,90" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-        <circle cx="110" cy="40" r="4.5" fill="#4FA8D8"/>
-        <path d="M110,40 L140,40 L140,20" fill="none" stroke="#4FA8D8" stroke-width="3" stroke-linecap="round"/>
-        <rect x="135" y="12" width="9" height="9" rx="1" fill="#4FA8D8"/>
-      </svg>
-      <span style="margin-left:10px;">SNOW PEAK <span class="it">IT</span></span>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Snow Peak IT. All rights reserved.</span>
+      <span>Serving Utah businesses</span>
     </div>
-    <p>&copy; 2026 Snow Peak IT. All rights reserved.</p>
+  </div>
 </footer>
 </body>
-  </html>
-  
+</html>
